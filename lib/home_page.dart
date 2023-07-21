@@ -19,8 +19,14 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.purple,
         actions: [
           IconButton(onPressed: (){
-          }, icon: Icon(Icons.search))
+            print('search clicked');
+          }, icon: Icon(Icons.search)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.add))
         ],
-      ),);
+      ),
+      drawer: Drawer(
+
+      ),
+    );
   }
 }
