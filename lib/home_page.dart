@@ -25,7 +25,37 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       drawer: Drawer(
-
+      child: ListView(
+        children: [
+          UserAccountsDrawerHeader(accountName: Text('Mahdi Jalali Jam'),
+            accountEmail: Text('ermiailia@gmail.com'),
+            decoration: BoxDecoration(color: Colors.purple),
+          ),
+          ListTile(
+            title: Text('Add Note'),
+          ),
+          ListTile(
+            title: Text('Show All Notes'),
+            leading: Icon(Icons.list),
+          ),
+          ListTile(
+            title: Text('About US'),
+            trailing: Icon(Icons.contact_page),
+          ),
+          ListTile(
+            title: Text('Setting'),
+            trailing: Icon(Icons.settings),
+            leading: Icon(Icons.map),
+            onTap: (){
+              print('Setting');
+            },
+            onLongPress: (){
+              print('Setting Long Press');
+            },
+          ),
+          Divider(height: 10,color: Colors.grey,)
+        ],
+      ),
       ),
     );
   }
