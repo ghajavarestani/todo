@@ -16,6 +16,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('todo'),
         centerTitle: true,
-        backgroundColor: Colors.purple,),);
+        backgroundColor: Colors.purple,
+        actions: [
+          IconButton(onPressed: (){
+          }, icon: Icon(Icons.search))
+        ],
+      ),);
   }
 }
