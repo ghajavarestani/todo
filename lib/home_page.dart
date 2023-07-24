@@ -79,40 +79,66 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Container(
-              // color: Colors.green,
-              height: 120,
-              width: 220,
-              child: Text('Welcome'),
-              decoration: BoxDecoration(
-                // color: Colors.green
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.topRight,
-                      colors: [
-                        // Colors.purple.withOpacity(0.9),
-                        // Colors.amber.withOpacity(0.5)
-                        Colors.purple,
-                        Colors.amber
-                      ]
-                  ),
-                  //borderRadius: BorderRadius.all(Radius.circular(20))
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40),
-                      topLeft: Radius.circular(20)
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.amber,
-                        blurRadius: 10.0,
-                        //blurStyle:
-                        offset: Offset(10,10)
-                    )
-                  ]
-                //payane film 36th va shoroue film 37th
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(onPressed: (){}, child: Text('Button 1')),
+                ElevatedButton(onPressed: (){}, child: Text('Button 2')),
+                ElevatedButton(onPressed: (){}, child: Text('Button 3'))
+              ],
             ),
-            ElevatedButton(onPressed: (){}, child: Text('Column1')),
-            ElevatedButton(onPressed: (){}, child: Text('Column2'))
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(onPressed: (){}, child: Text('Button 4')),
+                ElevatedButton(onPressed: (){}, child: Text('Button 5')),
+                ElevatedButton(onPressed: (){}, child: Text('Button 6'))
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                ElevatedButton(onPressed: (){}, child: Text('Button 7')),
+                ElevatedButton(onPressed: (){}, child: Text('Button 8')),
+                ElevatedButton(onPressed: (){}, child: Text('Button 9'))
+              ],
+            )
+            //payane film 38th va shoroue film 39th
+            // Container(
+            //   // color: Colors.green,
+            //   height: 120,
+            //   width: 220,
+            //   child: Text('Welcome'),
+            //   decoration: BoxDecoration(
+            //     // color: Colors.green
+            //       gradient: LinearGradient(
+            //           begin: Alignment.topCenter,
+            //           end: Alignment.topRight,
+            //           colors: [
+            //             // Colors.purple.withOpacity(0.9),
+            //             // Colors.amber.withOpacity(0.5)
+            //             Colors.purple,
+            //             Colors.amber
+            //           ]
+            //       ),
+            //       //borderRadius: BorderRadius.all(Radius.circular(20))
+            //       borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40),
+            //           topLeft: Radius.circular(20)
+            //       ),
+            //       boxShadow: [
+            //         BoxShadow(
+            //             color: Colors.amber,
+            //             blurRadius: 10.0,
+            //             //blurStyle:
+            //             offset: Offset(10,10)
+            //         )
+            //       ]
+            //     //payane film 36th va shoroue film 37th
+            //   ),
+            // ),
+            // ElevatedButton(onPressed: (){}, child: Text('Column1')),
+            // ElevatedButton(onPressed: (){}, child: Text('Column2')),
+
           ],
         ),
       )
