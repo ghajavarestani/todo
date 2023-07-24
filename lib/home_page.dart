@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+
+//film 33&34&35&36th
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -56,6 +58,49 @@ class _HomePageState extends State<HomePage> {
           Divider(height: 10,color: Colors.grey,)
         ],
       ),
+      ),
+      // body: ElevatedButton(onPressed: (){
+      //   print('welcome to flutter');
+      // },
+      //   child: Text('Welcome'),),
+      // body: Center(
+      //   child: ElevatedButton(onPressed: (){
+      //     print('welcome to flutter');
+      //     },
+      //   child: Text('Welcome'),),
+      body: Center(
+        child: Container(
+          // color: Colors.green,
+          height: 120,
+          width: 220,
+          child: Text('Welcome'),
+          decoration: BoxDecoration(
+            // color: Colors.green
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.topRight,
+              colors: [
+                // Colors.purple.withOpacity(0.9),
+                // Colors.amber.withOpacity(0.5)
+                Colors.purple,
+                Colors.amber
+              ]
+            ),
+            //borderRadius: BorderRadius.all(Radius.circular(20))
+              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(40),
+              topLeft: Radius.circular(20)
+              ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.amber,
+                blurRadius: 10.0,
+                //blurStyle:
+                offset: Offset(10,10)
+              )
+            ]
+              //payane film 36th va shoroue film 37th
+          ),
+        ),
       ),
     );
   }
