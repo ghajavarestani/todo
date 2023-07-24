@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('todo'),
+        title: Text('ToDo Application'),
         centerTitle: true,
         backgroundColor: Colors.purple,
         actions: [
@@ -79,30 +79,55 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ElevatedButton(onPressed: (){}, child: Text('Button 1')),
-                ElevatedButton(onPressed: (){}, child: Text('Button 2')),
-                ElevatedButton(onPressed: (){}, child: Text('Button 3'))
-              ],
+            Text('Welcome to my todo App'),
+            Container(
+              child:
+              Text('Enter Your UserName:'),
+              //color: Colors.purple,
+              margin: EdgeInsets.only(left: 20,right: 20,top: 20),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ElevatedButton(onPressed: (){}, child: Text('Button 4')),
-                ElevatedButton(onPressed: (){}, child: Text('Button 5')),
-                ElevatedButton(onPressed: (){}, child: Text('Button 6'))
-              ],
+
+            TextField(
+              decoration: InputDecoration(
+                hintText: 'Enter Your Username:'
+              ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ElevatedButton(onPressed: (){}, child: Text('Button 7')),
-                ElevatedButton(onPressed: (){}, child: Text('Button 8')),
-                ElevatedButton(onPressed: (){}, child: Text('Button 9'))
-              ],
-            )
+            Container(
+              child:
+              Text('Enter Your Password:'),
+              margin: EdgeInsets.only(left: 20,right: 20,top: 20),
+            ),
+
+            TextField(
+              decoration: InputDecoration(
+                hintText: 'Enter Your Password:'
+              ),
+            ),
+            ElevatedButton(onPressed: (){}, child: Text('Login'))
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 1')),
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 2')),
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 3'))
+            //   ],
+            // ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 4')),
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 5')),
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 6'))
+            //   ],
+            // ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 7')),
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 8')),
+            //     ElevatedButton(onPressed: (){}, child: Text('Button 9'))
+            //   ],
+            // )
             //payane film 38th va shoroue film 39th
             // Container(
             //   // color: Colors.green,
