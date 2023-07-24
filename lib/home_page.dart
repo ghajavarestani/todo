@@ -79,31 +79,68 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Text('Welcome to my todo App'),
+            Text('Welcome to your todo App'),
             Container(
               child:
-              Text('Enter Your UserName:'),
+              TextField(
+                decoration: InputDecoration(
+                    hintText: 'Enter Your UserName:',
+                    border: OutlineInputBorder()
+                ),
+              ),
               //color: Colors.purple,
               margin: EdgeInsets.only(left: 20,right: 20,top: 20),
             ),
 
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Enter Your Username:'
-              ),
-            ),
+            // TextField(
+            //   decoration: InputDecoration(
+            //     hintText: 'Enter Your Username:'
+            //   ),
+            // ),
             Container(
               child:
-              Text('Enter Your Password:'),
+              TextField(
+                decoration: InputDecoration(
+                    hintText: 'Enter Your Password:',
+                  border: OutlineInputBorder()
+                ),
+              ),
               margin: EdgeInsets.only(left: 20,right: 20,top: 20),
             ),
 
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Enter Your Password:'
+            // TextField(
+            //   decoration: InputDecoration(
+            //     hintText: 'Enter Your Password:'
+            //   ),
+            // ),
+            Container(
+              margin: EdgeInsets.only(right: 20),
+              child:
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  ElevatedButton(onPressed: (){}, child: Text('Login'))
+                ],
               ),
             ),
-            ElevatedButton(onPressed: (){}, child: Text('Login'))
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.amber,
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
+              padding: EdgeInsets.all(8),
+              // color: Colors.amber,
+              child:
+              Text('Create New Account'),
+            )
+            //end film 39th va shoroe film 40th
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.end,
+            //   children: [
+            //     ElevatedButton(onPressed: (){}, child: Text('Login'))
+            //   ],
+            // )
+            // ElevatedButton(onPressed: (){}, child: Text('Login'))
             // Row(
             //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
             //   children: [
