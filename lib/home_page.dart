@@ -66,7 +66,85 @@ class _HomePageState extends State<HomePage> {
       //     },
       //   child: Text('Welcome'),),
       body:
-
+        Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // ElevatedButton(onPressed: (){}, child: Text('First')),
+                // ElevatedButton(onPressed: (){}, child: Text('second'))
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.purple,
+                ),
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.amber,
+                ),
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.green,
+                )
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.purple,
+                ),
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.amber,
+                ),
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.green,
+                )
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.purple,
+                ),
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.amber,
+                ),
+                Container(
+                  height: 40,
+                  width: 40,
+                  color: Colors.green,
+                )
+                //payane jalase 40 th va shhoroe jalase 41th
+              ],
+            )
+            // Center(
+            //   child:
+            //   ElevatedButton(onPressed: (){},child: Text('center'),),
+            // ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     ElevatedButton(onPressed: (){}, child: Text('Third')),
+            //     ElevatedButton(onPressed: (){}, child: Text('Fourth'))
+            //   ],
+            // )
+          ],
+        )
       // Container(
       //   width: 400,
       //   child: Column(
