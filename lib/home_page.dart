@@ -323,3 +323,31 @@
 // az avval az inja be bala hazf va azinja be paeen shoro
 //1
 //
+//
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    //return const Placeholder();
+    //upper line return place holder but in learning film
+    // he is used from Container that i use in below line
+    //return Container();
+    //then use Scaffold in below line
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Todo'),
+        centerTitle: true,
+        backgroundColor: Colors.purple,
+      ),
+    );
+  }
+}
+
