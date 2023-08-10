@@ -346,8 +346,99 @@ class _HomePageState extends State<HomePage> {
         title: Text('Todo'),
         centerTitle: true,
         backgroundColor: Colors.purple,
+        actions: [
+          IconButton(onPressed: (){
+            print('Search clicked');
+          }, icon: Icon(Icons.search,color: Colors.white,)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.add,color: Colors.white,))
+        ],
       ),
+      drawer: Drawer(
+        backgroundColor: Colors.white,
+          child: ListView(
+            children: [
+              UserAccountsDrawerHeader(accountName: Text('Mahdi Jalali Jam'),
+                accountEmail: Text('ermiailia@gmail.com'),
+                decoration: BoxDecoration(
+                  color: Colors.purple),
+              ),
+              ListTile(
+                title: Text('AddNote'),
+                textColor: Colors.purple,
+              ),
+              ListTile(
+                title: Text('Show All Notes'),
+                textColor: Colors.purple,
+                leading: Icon(Icons.list),
+              ),
+              ListTile(
+                title: Text('About US'),
+                textColor: Colors.purple,
+                trailing: Icon(Icons.contact_page),
+              ),
+              ListTile(
+                title: Text('Setting'),
+                textColor: Colors.purple,
+                trailing: Icon(Icons.settings),
+                leading: Icon(Icons.map),
+                onTap: (){
+                  print('Setting');
+                  },
+                onLongPress: (){
+                  print('Setting LongPress');
+                },
+              ),
+              Divider(height: 20,color: Colors.purple,)
+            ],
+          ),
+      ),
+      body:
+        Container(
+          width: 400,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text('Welcome To My Todo App'),
+              Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                      hintText: 'Enter Yuor Username here please:',
+                    border: OutlineInputBorder()
+                  ),
+                ),
+                margin: EdgeInsets.only(left: 20,right: 20,top: 20),
+              ),
+              Container(
+                margin: EdgeInsets.all(20),
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Enter Your Password Here:',
+                    border: OutlineInputBorder()
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(right: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    ElevatedButton(onPressed: (){}, child: Text('Login'))
+                  ],
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.amber,
+                  borderRadius: BorderRadius.all(Radius.circular(8))
+                ),
+                padding: EdgeInsets.all(8),
+                child: Text('Create New Account'),
+              )
+            ],
+          ),
+        )
     );
   }
 }
-
+//login page created
