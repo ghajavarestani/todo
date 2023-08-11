@@ -325,6 +325,9 @@
 //
 //
 import 'package:flutter/material.dart';
+import 'package:todo/register_page.dart';
+
+import 'about_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -388,7 +391,18 @@ class _HomePageState extends State<HomePage> {
                   print('Setting LongPress');
                 },
               ),
-              Divider(height: 20,color: Colors.purple,)
+              Divider(
+                height: 20,
+                color: Colors.purple,),
+              ListTile(
+                title: Text('About Us'),
+                leading: Icon(Icons.contact_phone),
+                onTap: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context)=> AboutPage()));
+                },
+              )
             ],
           ),
       ),
@@ -427,14 +441,19 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              Container(
-                decoration: BoxDecoration(
-                    color: Colors.amber,
-                  borderRadius: BorderRadius.all(Radius.circular(8))
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>RegisterPage()));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.amber,
+                      borderRadius: BorderRadius.all(Radius.circular(8))
+                  ),
+                  padding: EdgeInsets.all(8),
+                  child: Text('Create New Account'),
                 ),
-                padding: EdgeInsets.all(8),
-                child: Text('Create New Account'),
-              )
+              ),
             ],
           ),
         )
