@@ -325,6 +325,7 @@
 //
 //
 import 'package:flutter/material.dart';
+import 'package:todo/custom_text_page.dart';
 import 'package:todo/register_page.dart';
 
 import 'about_page.dart';
@@ -413,7 +414,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text('Welcome To My Todo App'),
+              Text('Welcome To My Todo App',textAlign: TextAlign.end,),
               Container(
                 child: TextField(
                   decoration: InputDecoration(
@@ -454,6 +455,12 @@ class _HomePageState extends State<HomePage> {
                   child: Text('Create New Account'),
                 ),
               ),
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>CustomTextPage()));
+                },
+                child: Text('Custom Text'),
+              )
             ],
           ),
         )
