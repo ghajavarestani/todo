@@ -17,5 +17,8 @@ import 'package:todo/home_page.dart';
 void main(){
   runApp(new MaterialApp(
     home: HomePage(),
+    theme: ThemeData(
+      fontFamily: 'B-NAZANIN'
+    ),
   ));
 }
