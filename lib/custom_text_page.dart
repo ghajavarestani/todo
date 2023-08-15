@@ -111,7 +111,8 @@ class _CustomTextPageState extends State<CustomTextPage> {
             ),
             textStyle: TextStyle(
               fontFamily: 'B-NAZANIN',
-            )
+            ),
+            //shoroe film 47th
           ),
           )
           ],
