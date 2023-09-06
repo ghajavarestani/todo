@@ -414,54 +414,20 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text('Welcome To My Todo App',textAlign: TextAlign.end,),
+              Text('Welcome to my todo app'),
               Container(
                 child: TextField(
                   decoration: InputDecoration(
-                      hintText: 'Enter Yuor Username here please:',
+                    hintText: 'Enter your username here you type i automatically hide myself',
                     border: OutlineInputBorder()
                   ),
                 ),
                 margin: EdgeInsets.only(left: 20,right: 20,top: 20),
               ),
-              Container(
-                margin: EdgeInsets.all(20),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Enter Your Password Here:',
-                    border: OutlineInputBorder()
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.only(right: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    ElevatedButton(onPressed: (){}, child: Text('Login'))
-                  ],
-                ),
-              ),
-              GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>RegisterPage()));
-                },
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.amber,
-                      borderRadius: BorderRadius.all(Radius.circular(8))
-                  ),
-                  padding: EdgeInsets.all(8),
-                  child: Text('Create New Account'),
-                ),
-              ),
-              GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>CustomTextPage()));
-                },
-                child: Text('Custom Text'),
-              )
-            ],
+              Text('Enter Your Password:'),
+              TextField(),
+              ElevatedButton(onPressed: (){}, child: Text('Login'),),
+             ]
           ),
         )
     );
